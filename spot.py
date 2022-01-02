@@ -70,7 +70,6 @@ class Spot:
 
     def update_neighbors(self, grid):
         self.neighbors = []
-
         # DOWN
         if self.row < self.total_rows - 1 and not grid[self.row + 1][self.col].is_barrier():
             self.neighbors.append(grid[self.row + 1][self.col])
